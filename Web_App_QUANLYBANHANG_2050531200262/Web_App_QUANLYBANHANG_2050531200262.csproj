@@ -71,6 +71,7 @@
     <Content Include="App_Data\dbQUANLYBANHANG_log.ldf">
       <DependentUpon>dbQUANLYBANHANG.mdf</DependentUpon>
     </Content>
+    <Content Include="DEMO_LISTCONTROL.aspx" />
     <Content Include="Global.asax" />
     <Content Include="IMAGES\BANNER.jfif" />
     <Content Include="IMAGES\iphone14.png" />
@@ -83,6 +84,13 @@
     <Compile Include="App_Code\ITEM.cs" />
     <Compile Include="App_Code\CART.cs" />
     <Compile Include="App_Code\XULYDULIEU.cs" />
+    <Compile Include="DEMO_LISTCONTROL.aspx.cs">
+      <DependentUpon>DEMO_LISTCONTROL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DEMO_LISTCONTROL.aspx.designer.cs">
+      <DependentUpon>DEMO_LISTCONTROL.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

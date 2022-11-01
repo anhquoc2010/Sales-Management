@@ -18,7 +18,7 @@ namespace Web_App_QUANLYBANHANG_2050531200262.App_Code
         {
             listcarts = new Dictionary<string, ITEM>();
         }
-        
+
         public void AddCart(String masanpham, string tensanpham, int soluong, double dongia, string hinhanh)
         {
             ITEM item = new ITEM(masanpham, tensanpham, soluong, dongia, hinhanh);
