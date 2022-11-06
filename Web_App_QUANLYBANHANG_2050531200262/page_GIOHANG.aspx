@@ -29,5 +29,5 @@
         <SortedDescendingCellStyle BackColor="#D8D8F0" />
         <SortedDescendingHeaderStyle BackColor="#3E3277" />
     </asp:GridView>
-    <asp:Button ID="btnDELETE" runat="server" OnClick="btnDELETE_Click" Text="Trả hàng" />
+    <asp:Button ID="btnDELETE" runat="server" OnClick="btnDELETE_Click" Text="Trả hàng" Height="54px" Width="147px" />
 </asp:Content>
