@@ -11,7 +11,7 @@ namespace Web_App_QUANLYBANHANG_2050531200262
 {
 
 
-    public partial class page_CHITIETSANPHAM
+    public partial class page_CHITIETMON
     {
 
         /// <summary>

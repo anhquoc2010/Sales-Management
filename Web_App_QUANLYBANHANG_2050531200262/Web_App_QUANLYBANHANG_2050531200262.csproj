@@ -67,22 +67,38 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\dbQUANLYBANHANG.mdf" />
-    <Content Include="App_Data\dbQUANLYBANHANG_log.ldf">
-      <DependentUpon>dbQUANLYBANHANG.mdf</DependentUpon>
+    <Content Include="ADMIN\GUI\pageQUANLYDANHMUC.aspx" />
+    <Content Include="App_Data\dbQUANLYNHAHANG.mdf" />
+    <Content Include="App_Data\dbQUANLYNHAHANG_log.ldf">
+      <DependentUpon>dbQUANLYNHAHANG.mdf</DependentUpon>
     </Content>
     <Content Include="DEMO_LISTCONTROL.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="IMAGES\BANNER.jfif" />
-    <Content Include="IMAGES\iphone14.png" />
-    <Content Include="pageDANH_SACH_SAN_PHAM.aspx" />
-    <Content Include="page_CHITIETSANPHAM.aspx" />
+    <Content Include="IMAGES\BANNER.jpg" />
+    <Content Include="IMAGES\mon1.jpg" />
+    <Content Include="IMAGES\mon2.jpg" />
+    <Content Include="IMAGES\mon3.jpg" />
+    <Content Include="IMAGES\mon4.png" />
+    <Content Include="IMAGES\mon5.jpg" />
+    <Content Include="IMAGES\mon6.jpg" />
+    <Content Include="IMAGES\mon7.jpg" />
+    <Content Include="pageDANH_SACH_MON.aspx" />
+    <Content Include="page_CHITIETMON.aspx" />
     <Content Include="page_GIOHANG.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADMIN\GUI\pageQUANLYDANHMUC.aspx.cs">
+      <DependentUpon>pageQUANLYDANHMUC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\GUI\pageQUANLYDANHMUC.aspx.designer.cs">
+      <DependentUpon>pageQUANLYDANHMUC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\BL\bl_QUANLYDANHMUC.cs" />
     <Compile Include="App_Code\ITEM.cs" />
     <Compile Include="App_Code\CART.cs" />
+    <Compile Include="App_Code\PD\pd_QUANLYDANHMUC.cs" />
     <Compile Include="App_Code\XULYDULIEU.cs" />
     <Compile Include="DEMO_LISTCONTROL.aspx.cs">
       <DependentUpon>DEMO_LISTCONTROL.aspx</DependentUpon>
@@ -101,19 +117,19 @@
     <Compile Include="MASTER_USER_PAGE.Master.designer.cs">
       <DependentUpon>MASTER_USER_PAGE.Master</DependentUpon>
     </Compile>
-    <Compile Include="pageDANH_SACH_SAN_PHAM.aspx.cs">
-      <DependentUpon>pageDANH_SACH_SAN_PHAM.aspx</DependentUpon>
+    <Compile Include="pageDANH_SACH_MON.aspx.cs">
+      <DependentUpon>pageDANH_SACH_MON.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pageDANH_SACH_SAN_PHAM.aspx.designer.cs">
-      <DependentUpon>pageDANH_SACH_SAN_PHAM.aspx</DependentUpon>
+    <Compile Include="pageDANH_SACH_MON.aspx.designer.cs">
+      <DependentUpon>pageDANH_SACH_MON.aspx</DependentUpon>
     </Compile>
-    <Compile Include="page_CHITIETSANPHAM.aspx.cs">
-      <DependentUpon>page_CHITIETSANPHAM.aspx</DependentUpon>
+    <Compile Include="page_CHITIETMON.aspx.cs">
+      <DependentUpon>page_CHITIETMON.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="page_CHITIETSANPHAM.aspx.designer.cs">
-      <DependentUpon>page_CHITIETSANPHAM.aspx</DependentUpon>
+    <Compile Include="page_CHITIETMON.aspx.designer.cs">
+      <DependentUpon>page_CHITIETMON.aspx</DependentUpon>
     </Compile>
     <Compile Include="page_GIOHANG.aspx.cs">
       <DependentUpon>page_GIOHANG.aspx</DependentUpon>

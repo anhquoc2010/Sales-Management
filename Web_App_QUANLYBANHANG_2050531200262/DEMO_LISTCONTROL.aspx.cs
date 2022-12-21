@@ -17,27 +17,27 @@ namespace Web_App_QUANLYBANHANG_2050531200262
         {
             xulydulieu = new XULYDULIEU();
             SqlParameter[] pr = new SqlParameter[1];
-            pr[0] = new SqlParameter("@MaDanhMuc", DBNull.Value);
+            pr[0] = new SqlParameter("@IdDanhMuc", DBNull.Value);
 
             DataTable tb = xulydulieu.getTable("psGetDanhMuc", pr);
             ListBox1.DataSource = tb;
             ListBox1.DataTextField = "TENDANHMUC";
-            ListBox1.DataValueField = "MADANHMUC";
+            ListBox1.DataValueField = "IDDANHMUC";
             ListBox1.DataBind();
 
             DropDownList1.DataSource = tb;
             DropDownList1.DataTextField = "TENDANHMUC";
-            DropDownList1.DataValueField = "MADANHMUC";
+            DropDownList1.DataValueField = "IDDANHMUC";
             DropDownList1.DataBind();
 
             CheckBoxList1.DataSource = tb;
             CheckBoxList1.DataTextField = "TENDANHMUC";
-            CheckBoxList1.DataValueField = "MADANHMUC";
+            CheckBoxList1.DataValueField = "IDDANHMUC";
             CheckBoxList1.DataBind();
 
             RadioButtonList1.DataSource = tb;
             RadioButtonList1.DataTextField = "TENDANHMUC";
-            RadioButtonList1.DataValueField = "MADANHMUC";
+            RadioButtonList1.DataValueField = "IDDANHMUC";
             RadioButtonList1.DataBind();
             
             //for (int i = 0; i < 10; i++)

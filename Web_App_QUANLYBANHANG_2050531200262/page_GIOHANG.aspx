@@ -5,8 +5,8 @@
     <asp:GridView ID="grvCART" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" ShowFooter="True" GridLines="Horizontal">
         <AlternatingRowStyle BackColor="#F7F7F7" />
         <Columns>
-            <asp:BoundField DataField="MASANPHAM" HeaderText="Mã sản phẩm" />
-            <asp:BoundField DataField="TENSANPHAM" HeaderText="Tên sản phẩm" />
+            <asp:BoundField DataField="MASANPHAM" HeaderText="Mã món" />
+            <asp:BoundField DataField="TENSANPHAM" HeaderText="Tên món" />
             <asp:BoundField DataField="SOLUONG" HeaderText="Số lượng" />
             <asp:BoundField DataField="DONGIA" HeaderText="Đơn giá" />
             <asp:BoundField DataField="THANHTIEN" HeaderText="Thành tiền" />

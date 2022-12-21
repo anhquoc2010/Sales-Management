@@ -16,7 +16,7 @@ namespace Web_App_QUANLYBANHANG_2050531200262
             xulydulieu = new App_Code.XULYDULIEU();
 
             SqlParameter[] pr = new SqlParameter[1];
-            pr[0] = new SqlParameter("@MaDanhMuc", DBNull.Value);
+            pr[0] = new SqlParameter("@IdDanhMuc", DBNull.Value);
 
             this.Repeater1.DataSource = xulydulieu.getTable("psGetDanhMuc",pr);
             this.Repeater1.DataBind();

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MASTER_USER_PAGE.Master" AutoEventWireup="true" CodeBehind="page_CHITIETSANPHAM.aspx.cs" Inherits="Web_App_QUANLYBANHANG_2050531200262.page_CHITIETSANPHAM" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MASTER_USER_PAGE.Master" AutoEventWireup="true" CodeBehind="page_CHITIETMON.aspx.cs" Inherits="Web_App_QUANLYBANHANG_2050531200262.page_CHITIETMON" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -6,7 +6,7 @@
     <asp:Repeater ID="Repeater2" runat="server">
         <ItemTemplate>
             <img alt="" src='IMAGES/<%# Eval("HINHANH") %>' width="150px" height="150px" />
-            <h1>Tên sản phẩm: <%# Eval("TENSANPHAM") %></h1>
+            <h1>Tên sản phẩm: <%# Eval("TENMON") %></h1>
             <%# Eval("MOTA") %>
             <br />
         </ItemTemplate>

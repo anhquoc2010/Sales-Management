@@ -8,11 +8,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
-        .auto-style1 {
-            width: 440px;
-            height: 114px;
-        }
-
+        
         .auto-style2 {
             width: 309px;
         }
@@ -21,6 +17,10 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
+        .auto-style3 {
+            width: 599px;
+            height: 287px;
+        }
     </style>
 </head>
 <body>
@@ -28,13 +28,14 @@
         <table style="width: 100%;">
             <tr>
                 <td colspan="3">
-                    <img alt="" class="auto-style1" src="IMAGES/BANNER.jfif" /></td>
+                    <img alt="" class="auto-style3" src="IMAGES/BANNER.jpg" /></td>
             </tr>
             <tr>
                 <td class="auto-style2">
+                    <h2>Danh mục Món</h2>
                     <asp:Repeater ID="Repeater1" runat="server">
                         <ItemTemplate>
-                            <a href="pageDANH_SACH_SAN_PHAM.aspx?MADANHMUC=<%# Eval("MADANHMUC") %>">
+                            <a href="pageDANH_SACH_MON.aspx?IDDANHMUC=<%# Eval("IDDANHMUC") %>">
                                 <%# Eval("TENDANHMUC") %>
                                 <br />
                             </a>

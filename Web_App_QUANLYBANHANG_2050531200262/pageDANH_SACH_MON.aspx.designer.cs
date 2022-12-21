@@ -11,7 +11,7 @@ namespace Web_App_QUANLYBANHANG_2050531200262
 {
 
 
-    public partial class pageDANH_SACH_SAN_PHAM
+    public partial class pageDANH_SACH_MON
     {
 
         /// <summary>

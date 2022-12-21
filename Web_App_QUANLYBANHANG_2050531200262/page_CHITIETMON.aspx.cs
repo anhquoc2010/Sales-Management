@@ -9,22 +9,22 @@ using System.Web.UI.WebControls;
 
 namespace Web_App_QUANLYBANHANG_2050531200262
 {
-    public partial class page_CHITIETSANPHAM : System.Web.UI.Page
+    public partial class page_CHITIETMON : System.Web.UI.Page
     {
         App_Code.XULYDULIEU xulydulieu;
         DataTable tbSANPHAM;
         protected void Page_Load(object sender, EventArgs e)
         {
             xulydulieu = new App_Code.XULYDULIEU();
-            string masanpham = Request.QueryString.Get("MASANPHAM");
+            string masanpham = Request.QueryString.Get("IDMON");
 
             SqlParameter[] pr;
             if (masanpham != null)
-                pr = new SqlParameter[] { new SqlParameter("@MASANPHAM", masanpham) };
+                pr = new SqlParameter[] { new SqlParameter("@IDMON", masanpham) };
             else
-                pr = new SqlParameter[] { new SqlParameter("@MASANPHAM", DBNull.Value) };
+                pr = new SqlParameter[] { new SqlParameter("@IDMON", DBNull.Value) };
 
-            tbSANPHAM = xulydulieu.getTable("psGetCHITIETSANPHAM", pr);
+            tbSANPHAM = xulydulieu.getTable("psGetCHITIETMON", pr);
             Repeater2.DataSource = tbSANPHAM;
             Repeater2.DataBind();
             int soluong = Convert.ToInt32(tbSANPHAM.Rows[0]["SOLUONG"].ToString());
@@ -38,8 +38,8 @@ namespace Web_App_QUANLYBANHANG_2050531200262
             App_Code.CART cart = new App_Code.CART();
             if (tbSANPHAM != null)
             {
-                String masanpham = tbSANPHAM.Rows[0]["MASANPHAM"].ToString();
-                String tensanpham = tbSANPHAM.Rows[0]["TENSANPHAM"].ToString();
+                String masanpham = tbSANPHAM.Rows[0]["IDMON"].ToString();
+                String tensanpham = tbSANPHAM.Rows[0]["TENMON"].ToString();
                 double dongia = Double.Parse(tbSANPHAM.Rows[0]["DONGIA"].ToString());
                 String hinhanh = tbSANPHAM.Rows[0]["HINHANH"].ToString();
                 int soluong = Int16.Parse(this.drSOLUONG.SelectedItem.Text);

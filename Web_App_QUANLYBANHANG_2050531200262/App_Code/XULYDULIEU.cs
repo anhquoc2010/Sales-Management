@@ -13,7 +13,7 @@ namespace Web_App_QUANLYBANHANG_2050531200262.App_Code
         public XULYDULIEU()
         {
             con = new SqlConnection();
-            con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\UTE\Study\Ki1Nam3\LapTrinhWebNC\ThucHanh\Web_App_QUANLYBANHANG_2050531200262\Web_App_QUANLYBANHANG_2050531200262\App_Data\dbQUANLYBANHANG.mdf;Integrated Security=True";
+            con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\UTE\Study\Nam3Ki1\LapTrinhWebNC\GK2\Web_App_QUANLYBANHANG_2050531200262\Web_App_QUANLYBANHANG_2050531200262\App_Data\dbQUANLYNHAHANG.mdf;Integrated Security=True";
         }
         private void MoKetNoi()
         {
@@ -68,8 +68,8 @@ namespace Web_App_QUANLYBANHANG_2050531200262.App_Code
         {
             this.MoKetNoi();
             SqlCommand cmd = new SqlCommand(SQL, this.con);
-            this.DongKetNoi();
             int k = (int)cmd.ExecuteNonQuery();
+            this.DongKetNoi();
             return k;
         }
         public int ExeCute(string nameprocedurce, SqlParameter[] pr)
@@ -81,8 +81,8 @@ namespace Web_App_QUANLYBANHANG_2050531200262.App_Code
             cmd.CommandText = nameprocedurce;
             if (pr != null)
                 cmd.Parameters.AddRange(pr);
-            this.DongKetNoi();
             int k = (int)cmd.ExecuteNonQuery();
+            this.DongKetNoi();
             return k;
         }
     }
